@@ -15,4 +15,8 @@ class GumballMachine {
 	public function turnWheel() {
 		$this->setGumballs($this->getGumballs()-2);
 	}
+
+	public function resetGumballs() {
+		$this->setGumballs(0);
+	}
 }

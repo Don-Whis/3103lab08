@@ -19,4 +19,13 @@ class GumballMachineTest extends TestCase {
 		
 		$this->assertEquals(99, $this->gumballMachineInstance->getGumballs());
 	}
+
+	public function testIfResetWorks() {
+		
+		$this->gumballMachineInstance->setGumballs(50);
+		
+		$this->gumballMachineInstance->resetGumballs();
+		
+		$this->assertEquals(0, $this->gumballMachineInstance->getGumballs());
+	}
 }
